@@ -44,6 +44,7 @@ The obvious port of `dispatch_once` to Swift is understandable but it seems verb
 {{< highlight swift >}}
 class SomeManager {
     static let sharedInstance = SomeManager()
+    private init() {}
 }
 {{< /highlight >}}
 
